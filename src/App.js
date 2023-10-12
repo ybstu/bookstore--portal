@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+
+import BookstoreRoutes from "./components/BookstoreRoutes";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Bookstore Web App - edit
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <BookstoreRoutes />
+        </BrowserRouter>
+    );
 }
 
 export default App;
