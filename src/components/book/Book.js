@@ -8,7 +8,6 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useState } from "react";
 import { BASE_URL } from "../../Constants";
 
-import "../../css/Book.css";
 function Book({
     id,
     name,
@@ -125,12 +124,12 @@ function Book({
                         </button>
                     </div>
                 )}
-                <div className="book-img d-flex justify-content-center align-items-center">
-                    <img src={"images/" + image} alt="Book cover" />
+                <div style={{borderRadius: "5%"}} className="book-img d-flex justify-content-center align-items-center">
+                    <img src={"images/" + image} alt="Book cover" style={{ borderRadius: "10%" }} />
                 </div>
-                <div className="book-info text-center">
+                <div className="book-info text-center" style={{border: "none"}}>
                     {/* <h4 className="book-name">{name}</h4> */}
-                    <p className="author">{author}</p>
+                    <p className="author" style={{ fontStyle: "italic" }}>by {author}</p>
                     {discount > 0 ? (
                         <h5>
                             Price:

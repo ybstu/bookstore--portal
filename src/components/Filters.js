@@ -5,7 +5,6 @@ import "../css/Filters.css";
 
 function Filters({ filters, setFilters, handleChange, handleReset }) {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -54,20 +53,20 @@ function Filters({ filters, setFilters, handleChange, handleReset }) {
                                     })
                                 }
                             >
-                                <option value="none">Recommended</option>
+                                <option value="none">Default</option>
                                 <option value="asc">Ascending price</option>
                                 <option value="desc">Descending price</option>
                             </select>
                         </div>
-                        <div className="mt-3 text-center ps-2">
+                        {/* <div className="mt-3 text-center ps-2">
                             <Button
-                                variant="primary"
+                                variant="info"
                                 onClick={handleShow}
                                 className="me-2"
                             >
-                                Filters
+                                OK
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
