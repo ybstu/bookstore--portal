@@ -1,6 +1,5 @@
 import Button from "react-bootstrap/esm/Button";
 import { LinkContainer } from "react-router-bootstrap";
-import FooterComponent from "../components/FooterComponent";
 import NavbarComponent from "../components/NavbarComponent";
 import { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
@@ -30,9 +29,7 @@ function HomePage() {
                         <Col xs={1}></Col>
                         <Col md={4} sm={8} xs={11}>
                             <h3 className="text-white">
-                                Welcome to BookStore! 
-                                Take advantage of our offers and purchase your
-                                desired book at the best prices!
+                                Welcome to BookStore Web App!
                             </h3>
                             <LinkContainer to="/books">
                                 <Button

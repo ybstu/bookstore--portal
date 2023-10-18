@@ -8,28 +8,6 @@
     margin: 0;
 }
 
-.mt-2 {
-    background-color: transparent;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    z-index: 1000;
-    
-}
-
-.mt-2:hover {
-    background-color: #0b0b0b;
-    transform: rotate(-3deg);
-    transition: all 0.3s ease-in-out;
-}
-
 .main-content {
     width: 100%;
     height: calc(100vh - 330px);
@@ -45,13 +23,4 @@
     position: absolute;
     bottom: 0;
     margin: auto;
-}
-
-.text-white {
-    color: white; 
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    right: 60%;
-    max-width: 400px;
 }

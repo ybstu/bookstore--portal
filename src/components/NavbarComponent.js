@@ -48,6 +48,12 @@ function NavbarComponent(props) {
                 <Container>
                     <LinkContainer to="/">
                         <Navbar.Brand className="text-danger">
+                            <img
+                                className="p-1"
+                                src="/images/logo.png"
+                                width="40"
+                                height="40"
+                            ></img>
                             📔BOOKSTORE
                         </Navbar.Brand>
                     </LinkContainer>

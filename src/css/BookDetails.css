@@ -1,0 +1,40 @@
+.main-detailsPage {
+    width: 100%;
+    /* background-image: url("https://images.pixexid.com/cozy-bookstore-shelves-brimming-with-books-under-the-warm-library-lights-u5zogtym.webp?h=698&q=70"); */
+    background-image: url("https://images.unsplash.com/photo-1584801096196-592feb269e31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80%22");
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+    color: white;
+    /* filter: brightness(30%); */
+}
+/* .addtocart-btn {
+    border: none;
+    background-color: white;
+    color: #000000;
+} */
+
+.book-details-img {
+    height: 20rem;
+    padding-left: 30%;
+    padding-bottom: 10%;
+    border-radius: 20%;
+}
+
+.details-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.details-author {
+    text-align: center;
+    font-style: italic;
+}
+
+.container-details {
+    padding-top: 5rem;
+}
+
+.star{
+    color: yellow;
+}
