@@ -101,12 +101,12 @@ export default function Order({
             {order.order.map((order) => (
               <div className="d-flex justify-content-between" key={count++}>
                 <div className="order-name">- {order.name}</div>
-                <div className="order-name">Price:{order.price} RON</div>
+                <div className="order-name">Price:{order.price} USD</div>
                 <div className="order-name">Qty: {order.quantity}</div>
               </div>
             ))}
             <br />
-            <h6>Total price: {total} RON</h6>
+            <h6>Total price: {total} USD</h6>
           </Card.Body>
         </Accordion.Collapse>
       </Card>

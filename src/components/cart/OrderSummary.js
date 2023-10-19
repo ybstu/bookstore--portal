@@ -41,7 +41,7 @@ function OrderSummary({
           id="order-total"
         >
           <h4>Total:</h4>
-          <h4>{totalCartValue} RON</h4>
+          <h4>{totalCartValue} USD</h4>
         </div>
       </div>
       <DeleteItemModal

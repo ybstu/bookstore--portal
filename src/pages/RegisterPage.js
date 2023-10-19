@@ -145,7 +145,7 @@ function RegisterPage() {
                                             placeholder="First name"
                                             value={inputs.firstName}
                                             onChange={handleChange}
-                                            pattern="^[A-Za-z]{2,30}"
+                                            pattern="^[A-Za-z0-9]{2,30}"
                                             required
                                         />
                                         <Form.Control.Feedback type="invalid">
@@ -160,7 +160,7 @@ function RegisterPage() {
                                             placeholder="Last name"
                                             value={inputs.lastName}
                                             onChange={handleChange}
-                                            pattern="^[A-Za-z]{2,30}"
+                                            pattern="^[A-Za-z0-9]{2,30}"
                                             required
                                         />
                                         <Form.Control.Feedback type="invalid">
@@ -208,9 +208,15 @@ function RegisterPage() {
                                             value={inputs.password}
                                             onChange={handleChange}
                                             pattern="^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+                                            // pattern="^[a-z0-9_-]{3,16}$"
                                             required
                                         />
                                         <Form.Control.Feedback type="invalid">
+                                            {/* <p>
+                                                Please provide a valid password.
+                                                The password needs to be more than 3 characters long and no longer than 16.
+                                                only upper letters, lower letters, numbers, _, and - are allowed.
+                                            </p> */}
                                             <p>
                                                 Please provide a valid password.
                                                 The password needs to:{" "}

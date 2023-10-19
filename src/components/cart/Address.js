@@ -20,7 +20,7 @@ function Address({ title, handleChangeAddress, address }) {
             type="text"
             className="form-control"
             aria-describedby="inputGroupPrepend1"
-            pattern="(^[A-Za-z]{2,30})([ ]{0,1})([A-Za-z]{2,30}[ ]{0,1}){0,3}"
+            pattern="(^[A-Za-z0-9]{2,30})([ ]{0,1})([A-Za-z]{2,30}[ ]{0,1}){0,3}"
             required
           />
           <Form.Control.Feedback type="invalid">
@@ -62,7 +62,7 @@ function Address({ title, handleChangeAddress, address }) {
             type="text"
             className="form-control"
             aria-describedby="inputGroupPrepend3"
-            pattern="^[.0-9a-zA-Z\s,-]+$"
+            pattern="(^[.0-9a-zA-Z]{2,30})"
             required
           />
           <Form.Control.Feedback type="invalid">
@@ -83,7 +83,7 @@ function Address({ title, handleChangeAddress, address }) {
             type="text"
             className="form-control"
             aria-describedby="inputGroupPrepend4"
-            pattern="^[0-9]{6}$"
+            pattern="^[0-9]{4,6}$"
             required
           />
           <Form.Control.Feedback type="invalid">
