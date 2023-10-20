@@ -110,13 +110,13 @@ function DetailsPage() {
                                             <span id="price">
                                                 {book.price - book.discount}
                                             </span>{" "}
-                                            USD
+                                            NZD
                                         </h5>
                                     ) : (
                                         <h5>
                                             Price :{" "}
                                             <span id="price">{book.price}</span>{" "}
-                                            USD
+                                            NZD
                                         </h5>
                                     )}
                                     <div id="rating">

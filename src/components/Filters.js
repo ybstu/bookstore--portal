@@ -32,8 +32,8 @@ function Filters({ filters, setFilters, handleChange, handleReset }) {
                                         search: e.target.value
                                     })
                                 }
-                                placeholder="Search"
-                                aria-label="Search"
+                                placeholder="Search by Title"
+                                aria-label="Search by Title"
                                 aria-describedby="basic-addon1"
                             />
                         </div>
@@ -54,8 +54,13 @@ function Filters({ filters, setFilters, handleChange, handleReset }) {
                                 }
                             >
                                 <option value="none">Default</option>
-                                <option value="asc">Ascending price</option>
-                                <option value="desc">Descending price</option>
+                                <option value="asc">Asc price</option>
+                                <option value="desc">Des price</option>
+                                <option value="title_asc">Asc title</option>
+                                <option value="title_des">Des title</option>
+                                <option value="author_asc">Asc author</option>
+                                <option value="author_des">Des author</option>
+
                             </select>
                         </div>
                         {/* <div className="mt-3 text-center ps-2">

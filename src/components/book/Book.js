@@ -7,7 +7,7 @@ import ToastContainer from "react-bootstrap/ToastContainer";
 import { LinkContainer } from "react-router-bootstrap";
 import { useState } from "react";
 import { BASE_URL } from "../../Constants";
-
+import "../../css/Book.css";
 function Book({
     id,
     name,
@@ -125,7 +125,9 @@ function Book({
                     </div>
                 )}
                 <div style={{borderRadius: "5%"}} className="book-img d-flex justify-content-center align-items-center">
-                    <img src={"images/" + image} alt="Book cover" style={{ borderRadius: "10%" }} />
+                    <LinkContainer to={"/books/" + name}>
+                        <img src={"images/" + image} alt="Book cover" style={{ borderRadius: "10%" }} />
+                    </LinkContainer>
                 </div>
                 <div className="book-info text-center" style={{border: "none"}}>
                     {/* <h4 className="book-name">{name}</h4> */}
@@ -139,11 +141,11 @@ function Book({
                                 {" "}
                                 {price - discount}
                             </span>{" "}
-                            USD
+                            NZD
                         </h5>
                     ) : (
                         <h5>
-                            Price: <span className="price">{price}</span> USD
+                            Price: <span className="price">{price}</span> NZD
                         </h5>
                     )}
                     <div className="actionButtons">

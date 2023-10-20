@@ -13,6 +13,31 @@ function BookList({
     cartItemsNumber,
     setCartItemsNumber
 }) {
+    const sortedBooks = [...books];
+    if (filters.sort === "title_asc") {
+        sortedBooks.sort((a, b) => {
+            console.log("sort by title")
+            return a.name.localeCompare(b.name);
+        });
+        // console.log(sortedBooks);
+        // console.log("##########");
+        // console.log(books);
+    } else if (filters.sort === "title_des") {
+        sortedBooks.sort((a, b) => {
+            return b.name.localeCompare(a.name);
+        })
+    } else if (filters.sort === "author_asc") {
+        sortedBooks.sort((a, b) => {
+            return a.author.localeCompare(b.author);
+        })
+    } else if (filters.sort === "author_des") {
+        sortedBooks.sort((a, b) => {
+            return b.author.localeCompare(a.author);
+        })
+    } else if (filters.sort === "asc") {
+        // Handle other sorting options
+    }
+
     return (
         <>
             <Filters
@@ -24,7 +49,7 @@ function BookList({
             />
             <div className="container mt-3 mb-3">
                 <div className="row" id="book-row">
-                    {books.map((item) => (
+                    {sortedBooks.map((item) => (
                         <Book
                             key={item.id}
                             id={item.id}

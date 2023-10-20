@@ -48,7 +48,7 @@ function NavbarComponent(props) {
                 <Container>
                     <LinkContainer to="/">
                         <Navbar.Brand className="text-danger">
-                            📔BOOKSTORE
+                            📔MSE BookStore
                         </Navbar.Brand>
                     </LinkContainer>
                     {props.navStyle !== "simple" && (

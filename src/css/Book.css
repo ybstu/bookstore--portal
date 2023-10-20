@@ -1,0 +1,5 @@
+.book-card-e:hover {
+    /* background-color: antiquewhite; */
+    transform: translateY(-1rem);
+    cursor: pointer;
+}

@@ -33,7 +33,7 @@ function CartItem({ cartItem, changeQuantity, showDeleteModal }) {
       <div className="price-div">
         <p>Price</p>
         <p className="price">
-          {cartItem.quantity} x {cartItem.price} = {cartItem.quantity * cartItem.price} USD
+          {cartItem.quantity} x {cartItem.price} = {cartItem.quantity * cartItem.price} NZD
         </p>
       </div>
       <div className="remove-div">
